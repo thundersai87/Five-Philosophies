@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#26A69A"
+        android:orientation="vertical"
+        tools:context="com.example.android.fivethings.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="vitruvianMan"
+            android:scaleType="centerCrop"
+            android:src="@drawable/taoism" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+            <Button
+                android:id="@+id/first_thing"
+                style="@style/ButtonStyle"
+                android:onClick="firstThing"
+                android:text="Freedom of Action" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/freedom" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/first_thing" />
+
+            <Button
+                android:id="@+id/second_thing"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/first_thing"
+                android:onClick="secondThing"
+                android:text="Taoism" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burman3" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/second_thing" />
+
+            <Button
+                android:id="@+id/third_thing"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/second_thing"
+                android:onClick="thirdThing"
+                android:text="Sri Adi Shankaracharya" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shankaracharya" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/third_thing" />
+
+            <Button
+                android:id="@+id/fourth_thing"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/third_thing"
+                android:onClick="fourthThing"
+                android:text="Aristotle" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="365dp"
+                android:src="@drawable/aristotle"/>
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/fourth_thing">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/fifth_thing"
+                style="@style/ButtonStyle"
+                android:layout_below="@id/fourth_thing"
+                android:onClick="fifthThing"
+                android:text="Confucius" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="365dp"
+                android:src="@drawable/confuciansymbol"/>
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/fifth_thing"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
